@@ -1,0 +1,81 @@
+/* Add this CSS to your existing meios_de_contato.css file */
+
+body {
+    background-color: #eaf6f6;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    gap: 20px;
+    width: 100%;
+    max-width: 600px; /* Limit the container's width for better readability */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+  }
+  
+  hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-top-color: gray;
+    border-width: 5px;
+    width: 10%;
+  }
+  
+  h1, h3 {
+    color: #66bfbf;
+    text-align: center; /* Center the name and section headers */
+  }
+  
+  /* Default styles for the skills table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Center list items and addresses */
+  ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding for the list */
+  }
+  
+  ul li {
+    margin: 5px 0; /* Add some vertical spacing between list items */
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Center the first letter of the list items */
+  ul li::first-letter {
+    margin-right: right;
+  }
+  
+  p {
+    text-align: center; /* Center the address */
+  }
+  
+  /* Center links */
+  a {
+    display: block; /* Adjust link as block element to center it */
+    text-align: center;
+  }
+  
+  /* Media query for screens with a maximum width of 600 pixels */
+  @media screen and (max-width: 600px) {
+    table {
+      font-size: 12px; /* Reduce font size for smaller screens */
+    }
+  
+    th, td {
+      padding: 5px; /* Reduce padding for smaller cells */
+    }
+  }
+  
+  /* Add more CSS styles as needed for responsiveness */
+  

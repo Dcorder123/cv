@@ -4,16 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css\hobbies.css" />
     <title>Meus hobbies</title>
   </head>
   <body>
     <h3>Meus hobbies</h3>
-    <ol>
-      <li><a href="https://guardacampina.wixsite.com/noite"> Swordplay</a></li>
-      <li><a href="https://pt.wikipedia.org/wiki/Judô"> Jiu-jitsu </a></li>
-      <li>Ler novels</li>
-    </ol>
-    <p><a href="index.html">voltar</a></p>
+    <ul> <!-- Change the ordered list to an unordered list (ul) -->
+      <li><a href="https://guardacampina.wixsite.com/noite">Swordplay link</a></li>
+      <img src="sword.png" alt="swordplay" width="100" height="150" />
+      <li><a href="https://pt.wikipedia.org/wiki/Judô">Jiu-jitsu link</a></li>
+      <img src="jiu jitsu.png" alt="esporte jiu jitsu" width="100" height="150" />
+      <li><a>Ler novels</a></li>
+      <img src="novel.png" alt="novel" width="100" height="150" />
+    </ul>
+    <button class="glow-on-hover" type="button" onclick="goBack()">VOLTAR PAGINA!</button>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
   </body>
 </html>
