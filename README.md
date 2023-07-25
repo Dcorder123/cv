@@ -19,8 +19,7 @@
 - <img  alt="JavaScript"  src="https://img.shields.io/badge/-JavaScript-333333?style=flat&logo=javascript">
 
 ## 📌 Links
-site: https://danielbarbosav.github.io/cv/
-
+site: https://dcorder123.github.io/cv/
 </div>
 
 
