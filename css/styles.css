@@ -97,5 +97,9 @@ th, td {
   justify-content: center;
   gap: 10px;
 }
-
+.experiencia h3 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 /* Add more CSS styles as needed for responsiveness */
