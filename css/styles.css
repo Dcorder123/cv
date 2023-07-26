@@ -4,6 +4,43 @@ body {
   background-color: #eaf6f6;
 }
 
+.email-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.email-button .icon {
+  margin-right: 10px;
+}
+
+.email-button:hover {
+  background-color: #0056b3;
+}
+
+.hobbies-button{
+  display: inline-block;
+  background-color: #e63306;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.hobbies-button .icon {
+  margin-right: 10px;
+}
+
+.hobbies-button:hover {
+  background-color: #b30000;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -20,7 +57,7 @@ hr {
   border-top-style: dotted;
   border-top-color: gray;
   border-width: 5px;
-  width: 10%;
+  width: 100%;
 }
 
 h1, h3 {
