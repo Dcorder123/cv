@@ -1,44 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css\contatos.css" />
-    <title>Meios de contato</title>
+    <link rel="stylesheet" href="css/contatos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Contatos - Daniel Barbosa</title>
   </head>
   <body>
-    <h1>Meios de contato</h1>
-    <h3>📧Emails</h3>
-    <ul>
-      <li>vasconcelos.barbosa@academico.ifpb.edu.br</li>
-      <li>vascomcelosdaniel@hotmail.com</li>
-      <li>danielvasc@gmail.com</li>
-    </ul>
-    <h3>Rede sociais</h3>
-    <ul>
-      <li>
-        <a
-          href="https://www.linkedin.com/in/daniel-barbosa-vasconcelos-7b097122b/"
-        >
-        Linkedin</a
-        >
-      </li>
-      <li><a href="https://github.com/Dcorder123">GitHub</a></li>
-    </ul>
-    <h3>Endereço</h3>
-    <p>
-      País: Brasil<br />
-      Estado: Paraíba<br />
-      Cidade: Campina Grande<br />
-    </p>
+    <div class="container">
+      <header class="header">
+        <h1>
+          <i class="fas fa-address-book"></i>
+          Informações de Contato
+        </h1>
+        <p class="subtitle">Entre em contato comigo através dos canais abaixo</p>
+      </header>
 
-    <button class="glow-on-hover" type="button" onclick="goBack()">VOLTAR PAGINA!</button>
+      <main class="main-content">
+        <section class="contact-section">
+          <div class="section-header">
+            <h2>
+              <i class="fas fa-envelope"></i>
+              Emails
+            </h2>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="contact-info">
+                <h3>Email Acadêmico</h3>
+                <p>vasconcelos.barbosa@academico.ifpb.edu.br</p>
+                <span class="contact-type">Principal</span>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-info">
+                <h3>Email Pessoal</h3>
+                <p>vascomcelosdaniel@hotmail.com</p>
+                <span class="contact-type">Alternativo</span>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fab fa-google"></i>
+              </div>
+              <div class="contact-info">
+                <h3>Gmail</h3>
+                <p>danielvasc@gmail.com</p>
+                <span class="contact-type">Secundário</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact-section">
+          <div class="section-header">
+            <h2>
+              <i class="fas fa-share-alt"></i>
+              Redes Sociais
+            </h2>
+          </div>
+          <div class="social-grid">
+            <a href="https://www.linkedin.com/in/daniel-barbosa-vasconcelos-7b097122b/" 
+               target="_blank" 
+               class="social-card linkedin">
+              <div class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div class="social-info">
+                <h3>LinkedIn</h3>
+                <p>Conecte-se comigo profissionalmente</p>
+                <span class="social-handle">@daniel-barbosa-vasconcelos</span>
+              </div>
+              <div class="arrow">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </a>
+            <a href="https://github.com/Dcorder123" 
+               target="_blank" 
+               class="social-card github">
+              <div class="social-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="social-info">
+                <h3>GitHub</h3>
+                <p>Veja meus projetos e códigos</p>
+                <span class="social-handle">@Dcorder123</span>
+              </div>
+              <div class="arrow">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="contact-section">
+          <div class="section-header">
+            <h2>
+              <i class="fas fa-map-marker-alt"></i>
+              Localização
+            </h2>
+          </div>
+          <div class="location-card">
+            <div class="location-icon">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <div class="location-info">
+              <h3>Endereço</h3>
+              <div class="address-details">
+                <div class="address-item">
+                  <i class="fas fa-flag"></i>
+                  <span>País: Brasil</span>
+                </div>
+                <div class="address-item">
+                  <i class="fas fa-map"></i>
+                  <span>Estado: Paraíba</span>
+                </div>
+                <div class="address-item">
+                  <i class="fas fa-city"></i>
+                  <span>Cidade: Campina Grande</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-section">
+          <div class="cta-card">
+            <h2>Pronto para conversar?</h2>
+            <p>Estou sempre aberto a novas oportunidades e colaborações. Entre em contato!</p>
+            <div class="cta-buttons">
+              <a href="mailto:vasconcelos.barbosa@academico.ifpb.edu.br" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i>
+                Enviar Email
+              </a>
+              <a href="https://www.linkedin.com/in/daniel-barbosa-vasconcelos-7b097122b/" 
+                 target="_blank" 
+                 class="btn btn-secondary">
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <button class="back-button" onclick="goBack()">
+          <i class="fas fa-arrow-left"></i>
+          Voltar à Página Principal
+        </button>
+      </footer>
+    </div>
 
     <script>
       function goBack() {
         window.history.back();
       }
+
+      // Adicionar animações aos cards
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.contact-card, .social-card, .location-card, .cta-card').forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
+      });
     </script>
   </body>
 </html>

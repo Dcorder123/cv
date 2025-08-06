@@ -1,28 +1,312 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css\hobbies.css" />
-    <title>Meus hobbies</title>
+    <link rel="stylesheet" href="css/hobbies.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Hobbies - Daniel Barbosa</title>
   </head>
   <body>
-    <h3>Meus hobbies</h3>
-    <ul> <!-- Change the ordered list to an unordered list (ul) -->
-      <li><a href="https://guardacampina.wixsite.com/noite">Swordplay link</a></li>
-      <img src="img/sword.png" alt="swordplay" width="100" height="150" />
-      <li><a href="https://pt.wikipedia.org/wiki/Judô">Jiu-jitsu link</a></li>
-      <img src="img/jiu jitsu.png" alt="esporte jiu jitsu" width="100" height="150" />
-      <li><a>Ler novels</a></li>
-      <img src="img/novel.png" alt="novel" width="100" height="150" />
-    </ul>
-    <button class="glow-on-hover" type="button" onclick="goBack()">VOLTAR PAGINA!</button>
+    <div class="container">
+      <header class="header">
+        <h1>
+          <i class="fas fa-gamepad"></i>
+          Meus Hobbies & Interesses
+        </h1>
+        <p class="subtitle">Conheça um pouco mais sobre meus passatempos e paixões</p>
+      </header>
+
+      <main class="main-content">
+        <div class="hobbies-grid">
+          <div class="hobby-card">
+            <div class="hobby-image">
+              <img src="img/sword.png" alt="Esgrima e Swordplay" />
+              <div class="hobby-overlay">
+                <i class="fas fa-sword"></i>
+              </div>
+            </div>
+            <div class="hobby-content">
+              <h3>
+                <i class="fas fa-sword"></i>
+                Esgrima & Swordplay
+              </h3>
+              <p class="hobby-description">
+                Pratico esgrima e swordplay, uma arte marcial que combina técnica, precisão e estratégia. 
+                É uma atividade que desenvolve coordenação, concentração e disciplina.
+              </p>
+              <div class="hobby-details">
+                <span class="detail-item">
+                  <i class="fas fa-clock"></i>
+                  <span>Atividade Regular</span>
+                </span>
+                <span class="detail-item">
+                  <i class="fas fa-trophy"></i>
+                  <span>Arte Marcial</span>
+                </span>
+              </div>
+              <a href="https://guardacampina.wixsite.com/noite" 
+                 target="_blank" 
+                 class="hobby-link">
+                <i class="fas fa-external-link-alt"></i>
+                Saiba Mais
+              </a>
+            </div>
+          </div>
+
+          <div class="hobby-card">
+            <div class="hobby-image">
+              <img src="img/jiu jitsu.png" alt="Jiu-Jitsu" />
+              <div class="hobby-overlay">
+                <i class="fas fa-fist-raised"></i>
+              </div>
+            </div>
+            <div class="hobby-content">
+              <h3>
+                <i class="fas fa-fist-raised"></i>
+                Jiu-Jitsu
+              </h3>
+              <p class="hobby-description">
+                O Jiu-Jitsu é uma arte marcial que ensina defesa pessoal, disciplina e respeito. 
+                Através desta prática, desenvolvo força física, mental e aprendo valiosas lições de vida.
+              </p>
+              <div class="hobby-details">
+                <span class="detail-item">
+                  <i class="fas fa-medal"></i>
+                  <span>Arte Marcial</span>
+                </span>
+                <span class="detail-item">
+                  <i class="fas fa-heart"></i>
+                  <span>Paixão</span>
+                </span>
+              </div>
+              <a href="https://pt.wikipedia.org/wiki/Judô" 
+                 target="_blank" 
+                 class="hobby-link">
+                <i class="fas fa-external-link-alt"></i>
+                Sobre Jiu-Jitsu
+              </a>
+            </div>
+          </div>
+
+          <div class="hobby-card">
+            <div class="hobby-image">
+              <img src="img/novel.png" alt="Leitura de Novels" />
+              <div class="hobby-overlay">
+                <i class="fas fa-book-open"></i>
+              </div>
+            </div>
+            <div class="hobby-content">
+              <h3>
+                <i class="fas fa-book-open"></i>
+                Leitura de Novels
+              </h3>
+              <p class="hobby-description">
+                Sou um ávido leitor de novels, especialmente ficção científica, fantasia e tecnologia. 
+                A leitura me permite explorar novos mundos e expandir minha criatividade e conhecimento.
+              </p>
+              <div class="hobby-details">
+                <span class="detail-item">
+                  <i class="fas fa-brain"></i>
+                  <span>Desenvolvimento Intelectual</span>
+                </span>
+                <span class="detail-item">
+                  <i class="fas fa-infinity"></i>
+                  <span>Imaginação</span>
+                </span>
+              </div>
+              <div class="hobby-genres">
+                <span class="genre-tag">Ficção Científica</span>
+                <span class="genre-tag">Fantasia</span>
+                <span class="genre-tag">Tecnologia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hobby-card">
+            <div class="hobby-image">
+              <div class="tech-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="hobby-overlay">
+                <i class="fas fa-code"></i>
+              </div>
+            </div>
+            <div class="hobby-content">
+              <h3>
+                <i class="fas fa-code"></i>
+                Tecnologia & Programação
+              </h3>
+              <p class="hobby-description">
+                Sou apaixonado por tecnologia e sempre estou explorando novas linguagens de programação, 
+                frameworks e tendências do mundo tech. É tanto hobby quanto profissão!
+              </p>
+              <div class="hobby-details">
+                <span class="detail-item">
+                  <i class="fas fa-rocket"></i>
+                  <span>Inovação</span>
+                </span>
+                <span class="detail-item">
+                  <i class="fas fa-puzzle-piece"></i>
+                  <span>Problem Solving</span>
+                </span>
+              </div>
+              <div class="hobby-genres">
+                <span class="genre-tag">Python</span>
+                <span class="genre-tag">Web Dev</span>
+                <span class="genre-tag">AI/ML</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hobby-card">
+            <div class="hobby-image">
+              <div class="tech-icon gaming">
+                <i class="fas fa-gamepad"></i>
+              </div>
+              <div class="hobby-overlay">
+                <i class="fas fa-trophy"></i>
+              </div>
+            </div>
+            <div class="hobby-content">
+              <h3>
+                <i class="fas fa-gamepad"></i>
+                Gaming & E-sports
+              </h3>
+              <p class="hobby-description">
+                Como um verdadeiro geek, adoro jogos que desafiam a mente e a estratégia. 
+                Gaming é uma forma de relaxar e também de conectar com amigos e comunidades.
+              </p>
+              <div class="hobby-details">
+                <span class="detail-item">
+                  <i class="fas fa-users"></i>
+                  <span>Comunidade</span>
+                </span>
+                <span class="detail-item">
+                  <i class="fas fa-brain"></i>
+                  <span>Estratégia</span>
+                </span>
+              </div>
+              <div class="hobby-genres">
+                <span class="genre-tag">Estratégia</span>
+                <span class="genre-tag">RPG</span>
+                <span class="genre-tag">Indie Games</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hobby-card">
+            <div class="hobby-image">
+              <div class="tech-icon energy">
+                <i class="fas fa-solar-panel"></i>
+              </div>
+              <div class="hobby-overlay">
+                <i class="fas fa-leaf"></i>
+              </div>
+            </div>
+            <div class="hobby-content">
+              <h3>
+                <i class="fas fa-solar-panel"></i>
+                Energia Renovável
+              </h3>
+              <p class="hobby-description">
+                Tenho grande interesse em energia renovável e sustentabilidade. 
+                Estudo sobre painéis solares, eólica e outras tecnologias verdes para um futuro melhor.
+              </p>
+              <div class="hobby-details">
+                <span class="detail-item">
+                  <i class="fas fa-leaf"></i>
+                  <span>Sustentabilidade</span>
+                </span>
+                <span class="detail-item">
+                  <i class="fas fa-globe"></i>
+                  <span>Futuro</span>
+                </span>
+              </div>
+              <div class="hobby-genres">
+                <span class="genre-tag">Solar</span>
+                <span class="genre-tag">Eólica</span>
+                <span class="genre-tag">Sustentável</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="philosophy-section">
+          <div class="philosophy-card">
+            <h2>
+              <i class="fas fa-quote-left"></i>
+              Minha Filosofia
+            </h2>
+            <p>
+              "Acredito que os hobbies são fundamentais para o desenvolvimento pessoal e profissional. 
+              Cada atividade que pratico me ensina algo novo: a esgrima desenvolve precisão e estratégia, 
+              o jiu-jitsu ensina disciplina e respeito, a leitura expande horizontes, e a tecnologia 
+              alimenta minha curiosidade sobre o futuro."
+            </p>
+            <div class="quote-author">
+              <i class="fas fa-user"></i>
+              <span>Daniel Barbosa Vasconcelos</span>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <button class="back-button" onclick="goBack()">
+          <i class="fas fa-arrow-left"></i>
+          Voltar à Página Principal
+        </button>
+      </footer>
+    </div>
 
     <script>
       function goBack() {
         window.history.back();
       }
+
+      // Adicionar animações aos cards
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.hobby-card, .philosophy-card').forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
+      });
+
+      // Efeito parallax nas imagens
+      document.querySelectorAll('.hobby-image').forEach(image => {
+        image.addEventListener('mouseenter', () => {
+          const overlay = image.querySelector('.hobby-overlay');
+          if (overlay) {
+            overlay.style.opacity = '1';
+          }
+        });
+
+        image.addEventListener('mouseleave', () => {
+          const overlay = image.querySelector('.hobby-overlay');
+          if (overlay) {
+            overlay.style.opacity = '0';
+          }
+        });
+      });
     </script>
   </body>
 </html>

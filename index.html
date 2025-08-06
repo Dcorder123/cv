@@ -1,77 +1,416 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>💚Daniel Barbosa Site Pessoal</title>
+  <title>Daniel Barbosa - Desenvolvedor</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <img src="img/daniel.png" alt="Imagem de Daniel Barbosa" width="150" height="200" />
-    <h1>Daniel Barbosa Vasconcelos</h1>
-    <p>Estudante de Engenharia da Computação no IFPB</p>
-    <p>Eu sou um entusiasta de tecnologia, energia renovável e um geek. Dev em formação também.</p>
-    <hr />
-    <div class="educa">
-    <h3>Educação</h3>
-    <ul>
-      <li>📕  Técnico em Petróleo e Gás Pelo <a href="https://www.ifpb.edu.br/">IFPB (Instituto Federal da Paraíba)</a></li>
-      <li>💻 Cursando Engenharia da Computação no <a href="https://www.ifpb.edu.br/">IFPB (Instituto Federal da Paraíba)</a></li>
-    </ul>
-  </div>
-    <hr />
-    <div class="experiencia">
-      <h3>Experiência de Trabalho</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Datas</th>
-            <th>Trabalho</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2016-2018</td>
-            <td>Experiência com vendas e fabricação de alimentos</td>
-          </tr>
-          <tr>
-            <td>2020-2020</td>
-            <td>Vendas de roupas</td>
-          </tr>
-        </tbody>
-      </table>
-  </div>
-    <div class="Skills">
-      <h3>Skills</h3>
-      <table>
-        <tr>
-          <td>HTML</td>
-          <td>⭐⭐⭐⭐⭐</td>
-          <td>PYTHON</td>
-          <td>⭐⭐⭐⭐☆</td>
-          <td>JAVASCRIPT</td>
-          <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-          <td>Data Science</td>
-          <td>⭐⭐⭐☆☆</td>
-          <td>C++</td>
-          <td>⭐⭐⭐⭐⭐</td>
-          <td>CSS</td>
-          <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-      </table>
-  </div>
-    <hr />
-    <div class="buttons">
-      <a href="hobbies.html" class="hobbies-button">
-        <span class="icon">🐱‍🏍</span>  Meus Hobbies</a>
-      <a href="contatos.html" class="email-button">
-        <span class="icon">&#x2709;</span> Meios de contatos
-      </a>
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-brand">
+        <i class="fas fa-code"></i>
+        <span>Daniel Barbosa</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">Sobre</a></li>
+        <li><a href="#education" class="nav-link">Educação</a></li>
+        <li><a href="#experience" class="nav-link">Experiência</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contato</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <div class="container">
+        <div class="hero-content">
+          <div class="profile-image-container">
+            <img src="img/daniel.png" alt="Daniel Barbosa Vasconcelos" class="profile-image" />
+            <div class="image-overlay"></div>
+          </div>
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="greeting">Olá! Eu sou</span>
+              <span class="name">Daniel Barbosa Vasconcelos</span>
+            </h1>
+            <h2 class="hero-subtitle">Desenvolvedor & Estudante de Engenharia da Computação</h2>
+            <p class="hero-description">
+              Estudante de Engenharia da Computação (7º período - IFPB), com experiência em 
+              projetos de pesquisa e desenvolvimento de soluções web e mobile. Atuação em ambientes 
+              com metodologias ágeis, foco em automação, inteligência artificial e aplicações 
+              educacionais. Conhecimentos sólidos em Python, Git e sistemas Linux.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fas fa-envelope"></i>
+                Entre em Contato
+              </a>
+              <a href="https://github.com/Dcorder123" target="_blank" class="btn btn-secondary">
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fas fa-graduation-cap"></i>
+          Formação Acadêmica
+        </h2>
+        <div class="education-grid">
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="education-content">
+              <h3>Engenharia da Computação</h3>
+              <p class="institution">Instituto Federal da Paraíba (IFPB) - Campus Campina Grande</p>
+              <p class="status">7º período - Graduação em andamento</p>
+              <p class="description">Formação sólida em programação, algoritmos, estruturas de dados, desenvolvimento de software e sistemas embarcados.</p>
+            </div>
+          </div>
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-industry"></i>
+            </div>
+            <div class="education-content">
+              <h3>Técnico em Petróleo e Gás</h3>
+              <p class="institution">Instituto Federal da Paraíba (IFPB) - Integrado ao Ensino Médio</p>
+              <p class="status">Concluído em 2019</p>
+              <p class="description">Conhecimentos técnicos em exploração, produção e refino de petróleo e gás natural.</p>
+            </div>
+          </div>
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <div class="education-content">
+              <h3>Curso Técnico em Manutenção e Suporte em Informática</h3>
+              <p class="institution">Formação Complementar</p>
+              <p class="status">Incompleto</p>
+              <p class="description">Base em manutenção de hardware e suporte técnico em informática.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fas fa-briefcase"></i>
+          Experiência Profissional
+        </h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Projeto de Iniciação Científica: Gamificando o Terminal GNU/Linux</h3>
+              <p class="period">Nov/2023 - Dez/2024</p>
+              <p class="company">IFPB - Bolsista</p>
+              <p class="description">
+                Bolsista em projeto de pesquisa voltado à criação de um software educativo interativo. 
+                Utilização de metodologias ágeis no desenvolvimento e foco na democratização do uso do terminal.
+              </p>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Linux</span>
+                <span class="tag">Metodologias Ágeis</span>
+                <span class="tag">Educação</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Aplicativo Saúde Sênior</h3>
+              <p class="period">2022</p>
+              <p class="company">UEPB e Secretaria de Saúde</p>
+              <p class="description">
+                Colaboração no design e implementação de site gamificado para o público idoso, 
+                com funcionalidades educativas e acessíveis.
+              </p>
+              <div class="tags">
+                <span class="tag">Design</span>
+                <span class="tag">Gamificação</span>
+                <span class="tag">Acessibilidade</span>
+                <span class="tag">Web Development</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Vendas de Roupas</h3>
+              <p class="period">2020</p>
+              <p class="company">Experiência no Varejo</p>
+              <p class="description">Experiência em atendimento ao cliente e vendas no varejo de vestuário.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Vendas e Fabricação de Alimentos</h3>
+              <p class="period">2016 - 2018</p>
+              <p class="company">Setor Alimentício</p>
+              <p class="description">Experiência em produção, vendas e atendimento ao cliente no setor alimentício.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fas fa-code"></i>
+          Habilidades Técnicas
+        </h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3><i class="fab fa-python"></i> Python & Data Science</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-level">95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%"></div>
+                </div>
+                <div class="skill-details">
+                  <p>Pandas, NumPy, Matplotlib, Seaborn</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Machine Learning</span>
+                  <span class="skill-level">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+                <div class="skill-details">
+                  <p>Regressão Linear, RandomForest, LightGBM, Cross-validation</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Jupyter Notebook</span>
+                  <span class="skill-level">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-laptop-code"></i> Desenvolvimento Web</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">HTML/CSS</span>
+                  <span class="skill-level">95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-level">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Flutter</span>
+                  <span class="skill-level">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-microchip"></i> Sistemas & DevOps</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">C/C++</span>
+                  <span class="skill-level">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+                <div class="skill-details">
+                  <p>Sistemas embarcados e microcontroladores</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Linux & Shell Script</span>
+                  <span class="skill-level">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Git/GitHub & CI/CD</span>
+                  <span class="skill-level">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="additional-info">
+          <div class="info-card">
+            <h3>
+              <i class="fas fa-award"></i>
+              Formação Complementar
+            </h3>
+            <div class="certification">
+              <h4>Sensoriamento Inteligente com Aprendizado por Reforço para Veículos Autônomos</h4>
+              <p class="cert-details">Projeto Cap.BR / VIRTUS - 20h - Abr-Mai/2025</p>
+            </div>
+            <div class="methodology">
+              <h4><i class="fas fa-users"></i> Metodologias Ágeis</h4>
+              <p>Experiência com Scrum e desenvolvimento colaborativo</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <h3>
+              <i class="fas fa-gamepad"></i>
+              Hobbies & Interesses
+            </h3>
+            <p>Pratico esgrima e jiu-jitsu, leio novels e sou apaixonado por tecnologia e games.</p>
+            <a href="hobbies.html" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i>
+              Ver Mais
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fas fa-envelope"></i>
+          Vamos Conversar?
+        </h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <p class="contact-description">
+              Estou sempre aberto a novas oportunidades e colaborações. 
+              Entre em contato comigo!
+            </p>
+            <div class="contact-methods">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>vasconcelos.barbosa@academico.ifpb.edu.br</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Localização</h4>
+                  <p>Campina Grande, Paraíba - Brasil</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/daniel-barbosa-vasconcelos-7b097122b/" target="_blank" class="social-link">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/Dcorder123" target="_blank" class="social-link">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="contatos.html" class="social-link">
+              <i class="fas fa-address-book"></i>
+              <span>Mais Contatos</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Daniel Barbosa Vasconcelos. Todos os direitos reservados.</p>
     </div>
-  </div>
+  </footer>
+
+  <script>
+    // Mobile Navigation Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+      hamburger.classList.toggle('active');
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('nav-active');
+        hamburger.classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>
